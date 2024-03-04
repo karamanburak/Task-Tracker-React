@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #4CA1AF;
+    background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);
+    background: linear-gradient(to right, #C4E0E5, #4CA1AF);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.task-container {
+    background-image: url(../src/components/helper/fernsehturm.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 15px;
+    padding: 1rem 0px;
+}
+
+
+.task-list {
+    opacity: .7;
+}
+
+.task-div {
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: maroon;
+    color: black;
+    font-family: "Madimi One", sans-serif;
+    opacity: .8;
+    /* background-color:#D1E7DD; */
+    background-color: #e9959c;
+    position: relative;
+}
+
+.unchecked {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 1.5rem;
+    color: purple;
+    cursor: pointer;
+}
+
+.checked {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 1.5rem;
+    color: #D1E7DD;
+    cursor: pointer;
+
+}
+
+
+.trash {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: purple;
+    cursor: pointer;
+
+}
+
+.trash:hover{
+    color: red;
+}
+
+
+li {
+    list-style-type: none;
+}
