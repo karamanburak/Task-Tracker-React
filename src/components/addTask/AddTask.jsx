@@ -43,9 +43,7 @@ console.log(todos.completed);
                           <h5>{item.item}</h5>
                    
                           <FaTrashAlt onClick={() => deleteItemFromList(item.key)} className='trash' />
-                          {/* <div className="checkbox checked">
-                              <MdCheckCircle />
-                          </div> */}
+                          
 
                       </li>
                   </ul>
