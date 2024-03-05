@@ -38,10 +38,10 @@ const AddTask = ({ todos, setTodos }) => {
     return (
         <div>
             <header className="header">
-                <h1>TO DO APP</h1>
+                <h1>TASK TRACKER</h1>
                 <button
                     className="btn"
-                    style={{ background: display ? "red" : "purple" }}
+                    style={{ background: display ? "red" : "green" }}
                     onClick={() => setDisplay(!display)}
 
                 >

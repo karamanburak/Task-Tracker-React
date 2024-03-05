@@ -30,6 +30,10 @@ body {
     text-align: center;
     margin: 1rem;
 }
+h1{
+    margin-bottom: 1.5rem;
+    color: purple;
+}
 
 .btn {
     border: none;
