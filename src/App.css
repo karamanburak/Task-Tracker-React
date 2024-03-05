@@ -1,84 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     background: #4CA1AF;
     background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);
     background: linear-gradient(to right, #C4E0E5, #4CA1AF);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Madimi One", sans-serif;
 }
 
-
-.task-container {
+.container {
+    background-image: url(../src/components/helper/fernsehturm.jpg);
+    margin: 3rem auto;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 5px;
     background-image: url(../src/components/helper/fernsehturm.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-    border-radius: 15px;
-    padding: 1rem 0px;
+}
+
+.header {
+    text-align: center;
+    margin: 1rem;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.form-control {
+    margin: 20px 0;
 }
 
 
-.task-list {
-    opacity: .7;
+
+.form-control input {
+    width: 100%;
+    height: 40px;
+    padding: 1rem;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
 }
 
-.task-div {
-    border-radius: 30px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-color: maroon;
-    color: black;
-    font-family: "Madimi One", sans-serif;
-    opacity: .8;
-    /* background-color:#D1E7DD; */
-    background-color: #e9959c;
-    position: relative;
+.btn-submit {
+    width: 100%;
+    background-color: purple;
+    margin: 2rem 0;
 }
 
 .unchecked {
-    position: absolute;
-    top: 5px;
-    left: 15px;
-    font-size: 1.5rem;
-    color: purple;
+    background: #f4f4f4;
+    background: rgb(144, 212, 105);
+    margin: 5px;
+    margin-bottom: 1rem;
+    padding: 10px 20px;
     cursor: pointer;
+    color: maroon;
 }
 
 .checked {
-    position: absolute;
-    top: 5px;
-    left: 15px;
-    font-size: 1.5rem;
-    color: #D1E7DD;
-    cursor: pointer;
+    border-left: 10px solid rgb(102, 18, 77);
+    text-decoration: line-through;
+    background-color: lightgray;
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+    opacity: .8;
 
 }
 
 
-.trash {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 1.2rem;
-    color: purple;
-    cursor: pointer;
 
-}
-
-.trash:hover{
-    color: red;
-}
-
-
-li {
-    list-style-type: none;
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: normal;
 }

@@ -1,17 +1,12 @@
-import "bootstrap/dist/css/bootstrap.min.css"
-import './App.css';
-
 import React from 'react'
-import Header from "./components/header/Header";
-import TodoList from "./components/todoList/TodoList";
-import { Container} from "react-bootstrap";
+import "./App.css"
+import Home from './components/pages/Home'
 
 const App = () => {
   return (
-    <Container className="text-center">
-      <Header/>
-      <TodoList/>
-    </Container>
+    <div className="container">
+    <Home/>
+    </div>
   )
 }
 
